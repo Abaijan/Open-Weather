@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+.input {
+  width: 250px;
+  outline: none;
+  height: 30px;
+  border-top: none;
+  border-right: none;
+  border-left: 1px solid #ffff;
+  border-bottom: 3px solid#1b5699;
+  background-color: rgb(247, 242, 242, 0.1) ;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  width: 1340px;
+  height: 700px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-image: url(https://cdn.vectorstock.com/i/1000x1000/58/16/blue-sky-clouds-background-design-vector-12015816.webp);
+  background-repeat: no-repeat;
+  background-size: 1340px 700px;
+
 }
 
-.App-link {
-  color: #61dafb;
+.inner {
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  left: auto;
+  top: 200px;
+  position: fixed;
+  background-color: rgb(247, 242, 242, 0.6) ;
+  border: 3px solid #1b5699;
+  /* padding-top: 40px; */
+  padding: 40px 30px;
+  border-radius: 20px;
+  /* opacity: 0.5; */
+ 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn {
+  width: 120px;
+  height: 36px;
+  border-radius: 12.5px;
+  border: 3px solid #1b5699 ;
+  margin-left: 10px;
+  perspective: 100000;
+  cursor: pointer;
+  color: #1b5699;
+}
+
+
+.form {
+  height: 30px;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+.city,
+.country,
+.temp{
+  color: #1b5699;
+  font-weight: 700;
+  font-size: large;
 }
